@@ -1,0 +1,115 @@
+# =========================================
+# .gitignore para projetos Django
+# =========================================
+
+# Ambiente virtual
+venv/
+env/
+.venv/
+ENV/
+
+# Arquivos de configuração e credenciais locais
+*.env
+*.env.*
+.envrc
+*.decouple
+config.ini
+*.local
+*.secret
+/secrets.json
+
+# Compilações do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Banco de dados local
+db.sqlite3
+*.db
+
+# Arquivos de log
+*.log
+logs/
+logging/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Migrations automáticas (opcional — remova se quiser versioná-las)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.py~
+
+# Cache do Django
+staticfiles/
+static/
+media/
+*.mo
+*.pot
+
+# Arquivos de build e distribuição
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do sistema operacional
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Cobertura de testes e relatórios
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Docker e containers
+*.pid
+*.sock
+docker-compose.override.yml
+.docker/
+.dockerignore
+
+# Arquivos de Node.js (se o frontend React estiver no mesmo repo)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.yarn-integrity
+
+# Arquivos de ambiente do Celery / Redis
+celerybeat-schedule
+celerybeat.pid
+
+# =========================================
+# Fim do .gitignore
+# =========================================
+
+# Frontend React build
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
